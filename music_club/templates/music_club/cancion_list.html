@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Music Club</title>
+    </head>
+    <body>
+        {% for cancion in canciones %}
+        <div>
+            <p>{{ cancion.title }}</p>
+            <p>{{ cancion.author }}</p>
+            <p> publicado: {{ cancion.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
